@@ -1,0 +1,44 @@
+{
+    "id": "exp3d_dual_1st",
+    "version": 2,
+    "name": "Extruder 1",
+    "inherits": "fdmextruder",
+    "metadata": {
+        "machine": "exp3d_dual",
+        "position": "0"
+    },
+
+    "overrides": {
+        "extruder_nr": {
+            "default_value": 0,
+            "maximum_value": "1"
+        },
+
+        "machine_nozzle_size": {
+            "default_value": 0.5
+        },
+        "speed_wall_0": {
+            "default_value": 70
+        },
+        "machine_nozzle_offset_x": { "default_value": 0.0 },
+        "machine_nozzle_offset_y": { "default_value": 0.0 },
+        "machine_extruder_start_code":
+                {
+                    "label": "Extruder Start G-Code",
+                    "description": "Start g-code to execute whenever turning the extruder on.",
+                    "type": "str",
+                    "default_value": "G1 X30 Y210 F8000\nG1 X2 F2000\nG1 X175 F10000;Nettoyage",
+                    "settable_per_mesh": false,
+                    "settable_per_extruder": true,
+                    "settable_per_meshgroup": false,
+                    "settable_globally": false
+},
+
+        "machine_extruder_start_pos_abs": { "default_value": true },
+        "machine_extruder_start_pos_x": { "value": 175 },
+        "machine_extruder_start_pos_y": { "value": 210 },
+        "machine_extruder_end_pos_abs": { "default_value": true },
+        "machine_extruder_end_pos_x": { "value": 175 },
+        "machine_extruder_end_pos_y": { "value": 210 }
+    }
+}
