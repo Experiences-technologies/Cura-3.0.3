@@ -1,5 +1,5 @@
 {
-    "id": "exp3d_dual_2st",
+    "id": "exp3d_dual_2nd",
     "version": 2,
     "name": "Extruder 2",
     "inherits": "fdmextruder",
@@ -50,8 +50,6 @@
         "machine_extruder_start_pos_y": { "value": 210 },
         "machine_extruder_end_pos_abs": { "default_value": true },
         "machine_extruder_end_pos_x": { "value": 135 },
-        "machine_extruder_end_pos_y": { "value": 210 },
-        "machine_nozzle_size": { "default_value": 0.5 },
-        "speed_wall_0": { "default_value": 70 }
+        "machine_extruder_end_pos_y": { "value": 210 }
     }
 }
